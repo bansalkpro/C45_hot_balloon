@@ -33,15 +33,17 @@ function preload() {
 
   jumpSound = loadSound("assets/jump.mp3");
   dieSound = loadSound("assets/die.mp3");
+  
+  //background image
+  bg = createSprite(165, 485, 1, 1);
+  getBackgroundImg();
 
 }
 
 function setup() {
 
   createCanvas(400, 400)
-  //background image
-  bg = createSprite(165, 485, 1, 1);
-  getBackgroundImg();
+  
 
 
   //creating top and bottom grounds
